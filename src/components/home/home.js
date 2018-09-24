@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Fade from 'react-reveal/Fade';
 import './home.css';
 
 import Switch from './switch';
@@ -37,9 +38,12 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="home">
-        <h1>{this.state.currGreeting}</h1>
-      </div>
+      <Fade>
+        <div className="home">
+          <Switch handleToggle={this.props.handleToggle}/>
+          <h1>{this.state.currGreeting}</h1>
+        </div>
+      </Fade>
     );
   }
 }

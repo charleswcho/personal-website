@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Fade from 'react-reveal/Fade';
 import './skills.css';
 
 import Domain from './domain';
@@ -13,12 +14,14 @@ class Skills extends Component {
 
   render() {
     return (
-      <div className="skills">
-        <Domain name="Languages" items={this.state.languages}></Domain>
-        <Domain name="Frameworks" items={this.state.frameworks}></Domain>
-        <Domain name="Tools" items={this.state.tools}></Domain>
-        <Domain name="Hobbies" items={this.state.hobbies}></Domain>
-      </div>
+      <Fade>
+        <div className="skills">
+          <Domain name="Languages" items={this.state.languages}></Domain>
+          <Domain name="Frameworks" items={this.state.frameworks}></Domain>
+          <Domain name="Tools" items={this.state.tools}></Domain>
+          <Domain name="Hobbies" items={this.state.hobbies}></Domain>
+        </div>
+      </Fade>
     );
   }
 }

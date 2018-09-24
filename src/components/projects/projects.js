@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+import Fade from 'react-reveal/Fade';
 import './projects.css';
 
 import Project from './project';
@@ -14,13 +16,15 @@ class Projects extends Component {
 
   render() {
     return (
-      <div className="projects">
-        {
-          this.state.projects.map((project, idx) => {
-            return <Project key={idx} name={project.name} techs={project.techs}/>
-          })
-        }
-      </div>
+      <Fade>
+        <div className="projects">
+          {
+            this.state.projects.map((project, idx) => {
+              return <Project key={idx} name={project.name} techs={project.techs}/>
+            })
+          }
+        </div>
+      </Fade>
     );
   }
 }
