@@ -1,0 +1,8 @@
+.about {
+  height: calc(100vh - 120px);
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}

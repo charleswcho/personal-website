@@ -1,0 +1,11 @@
+.App {
+}
+
+.App.dark {
+  color: white;
+  background-color: #1D2731;
+}
+
+.App.dark h1 {
+  color: white;
+}
