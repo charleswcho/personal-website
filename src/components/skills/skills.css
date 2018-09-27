@@ -3,3 +3,19 @@
   display: flex;
   justify-content: center;
 }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .skills {
+    flex-wrap: wrap;
+  }
+
+  .skills .domain {
+    width: 40%;
+    margin: 10px;
+  }
+
+  .skills .domain .domain-item {
+    font-size: 14px;
+  }
+}

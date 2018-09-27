@@ -10,41 +10,44 @@ import Footer from './footer/footer';
 class App extends Component {
   state = {
     darkTheme: false,
-  }
+  };
 
   componentDidMount() {
-    this.setState({ darkTheme: this.defaultDark() })
+    this.setState({
+      darkTheme: this.defaultDark(),
+    });
   }
 
   defaultDark = () => {
     const date = new Date();
     const hours = date.getHours();
     // Darkmode default from 6pm to 6am
-    return (hours >= 18 || hours <= 6);
-  }
+    return hours >= 18 || hours <= 6;
+  };
 
   /**
    * Event handler methods
    */
 
-  handleToggle = (event) => {
-    this.setState({ darkTheme: event.target.checked })
-  }
+  handleToggle = event => {
+    this.setState({ darkTheme: event.target.checked });
+  };
 
   render() {
+    const { darkTheme } = this.state;
     let className = 'App';
 
-    if (this.state.darkTheme) {
+    if (darkTheme) {
       className += ' dark';
     }
 
     return (
       <div className={className}>
-        <Home handleToggle={this.handleToggle} darkTheme={this.state.darkTheme}/>
-        <About></About>
-        <Skills></Skills>
-        <Projects></Projects>
-        <Footer></Footer>
+        <Home handleToggle={this.handleToggle} darkTheme={darkTheme} />
+        <About />
+        <Skills />
+        <Projects />
+        <Footer />
       </div>
     );
   }

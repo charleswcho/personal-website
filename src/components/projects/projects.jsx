@@ -9,20 +9,27 @@ class Projects extends Component {
   state = {
     projects: [
       { name: 'Readit', techs: ['React', 'Redux', 'ES6', 'Jest', 'SASS'] },
-      { name: 'Realloc', techs: ['React', 'Flux', 'React Native', 'ES6', 'SASS'] },
-      { name: 'Google-Yelp', techs: ['React', 'Flux', 'ES6'] }
+      {
+        name: 'Realloc',
+        techs: ['React', 'Flux', 'React Native', 'ES6', 'SASS'],
+      },
+      { name: 'Google-Yelp', techs: ['React', 'Flux', 'ES6'] },
     ],
-  }
+  };
 
   render() {
+    const { projects } = this.state;
+
     return (
       <Fade>
         <div className="projects">
-          {
-            this.state.projects.map((project, idx) => {
-              return <Project key={idx} name={project.name} techs={project.techs}/>
-            })
-          }
+          {projects.map(project => (
+            <Project
+              key={project.name}
+              name={project.name}
+              techs={project.techs}
+            />
+          ))}
         </div>
       </Fade>
     );

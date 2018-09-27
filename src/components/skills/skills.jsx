@@ -9,17 +9,19 @@ class Skills extends Component {
     languages: ['Javascript', 'TypeScript', 'HTML', 'CSS', 'SASS', 'Bash'],
     frameworks: ['React', 'Redux', 'Angular 5', 'Bootstrap'],
     tools: ['Git', 'Bitbucket', 'Chrome DevTools', 'Postman', 'Atom'],
-    hobbies: ['Snowboarding', 'Bouldering']
-  }
+    hobbies: ['Snowboarding', 'Bouldering'],
+  };
 
   render() {
+    const { languages, frameworks, tools, hobbies } = this.state;
+
     return (
       <Fade>
         <div className="skills">
-          <Domain name="Languages" items={this.state.languages}></Domain>
-          <Domain name="Frameworks" items={this.state.frameworks}></Domain>
-          <Domain name="Tools" items={this.state.tools}></Domain>
-          <Domain name="Hobbies" items={this.state.hobbies}></Domain>
+          <Domain name="Languages" items={languages} />
+          <Domain name="Frameworks" items={frameworks} />
+          <Domain name="Tools" items={tools} />
+          <Domain name="Hobbies" items={hobbies} />
         </div>
       </Fade>
     );
