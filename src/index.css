@@ -3,10 +3,62 @@ body {
   margin: 0;
   padding: 0;
   font-family: Avenir;
+  line-height: 1.5;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
 }
 
 h1 {
-  /* color: black; */
+  font-size: 22px;
   color: #0080FF;
   font-weight: lighter;
+}
+
+h2 {
+  font-size: 20px;
+  /* color: #0080FF; */
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 18px;
+  /* color: #0080FF; */
+  font-weight: lighter;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 600px) and (max-width: 992px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+}
+
+/* Large devices (laptops/desktops, 993px and up) */
+@media (min-width: 993px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
 }

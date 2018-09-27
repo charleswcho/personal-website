@@ -1,19 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './domain.css';
 
-class Domain extends Component {
-  render() {
-    return (
-      <div className="domain">
-        <h1>{this.props.name}</h1>
+const Domain = ({ name, items }) => {
+  return (
+    <div className="domain">
+      <h3>{name}</h3>
+
+      <ul>
         {
-          this.props.items.map((item, idx) => {
-            return (<div className="domain-item" key={idx}>{item}</div>)
+          items.map((item, idx) => {
+            return (<li className="domain-item" key={idx}>{item}</li>)
           })
         }
-      </div>
-    );
-  }
+      </ul>
+    </div>
+  );
 }
 
 export default Domain;

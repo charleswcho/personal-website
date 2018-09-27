@@ -1,11 +1,60 @@
 .App {
+
 }
 
 .App.dark {
   color: white;
   background-color: #1D2731;
+  -webkit-font-smoothing: antialiased;
 }
 
 .App.dark h1 {
   color: white;
+}
+
+.App.dark .domain-item {
+  color: #E0E0E0;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .skills {
+    flex-wrap: wrap;
+  }
+
+  .skills .domain {
+    width: 40%;
+    margin: 10px;
+  }
+
+  .skills .domain .domain-item {
+    font-size: 14px;
+  }
 }

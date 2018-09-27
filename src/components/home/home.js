@@ -17,9 +17,8 @@ class Home extends Component {
 
   /**
    * Event handler methods
-   * @param {string} title - The title of the book.
-   * @return {void}
    */
+
   cycleThroughGreetings = () => {
     const interval = setInterval(() => {
       if (this.state.currIdx < this.state.greetings.length) {
@@ -40,7 +39,7 @@ class Home extends Component {
     return (
       <Fade>
         <div className="home">
-          <Switch handleToggle={this.props.handleToggle}/>
+          <Switch {...this.props}/>
           <h1>{this.state.currGreeting}</h1>
         </div>
       </Fade>

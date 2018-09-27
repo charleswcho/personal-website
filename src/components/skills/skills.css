@@ -1,7 +1,5 @@
 .skills {
-  height: calc(100vh - 120px);
-  padding: 50px;
+  padding: 50px 35px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }

@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './switch.css';
 
-class Switch extends Component {
-  render() {
-    return (
-      <label className="switch">
-        <input type="checkbox" onChange={this.props.handleToggle}/>
-        <span className="slider"></span>
-      </label>
-    );
-  }
+const Switch = ({ darkTheme, handleToggle }) => {
+  return (
+    <label className="switch">
+      <input type="checkbox" checked={darkTheme} onChange={handleToggle}/>
+      <span className="slider"></span>
+    </label>
+  );
 }
 
 export default Switch;

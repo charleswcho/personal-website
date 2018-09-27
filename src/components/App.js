@@ -16,10 +16,6 @@ class App extends Component {
     this.setState({ darkTheme: this.defaultDark() })
   }
 
-  /**
-   * View logic methods
-   */
-
   defaultDark = () => {
     const date = new Date();
     const hours = date.getHours();
@@ -44,7 +40,7 @@ class App extends Component {
 
     return (
       <div className={className}>
-        <Home handleToggle={this.handleToggle}/>
+        <Home handleToggle={this.handleToggle} darkTheme={this.state.darkTheme}/>
         <About></About>
         <Skills></Skills>
         <Projects></Projects>
