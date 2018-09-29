@@ -18,10 +18,14 @@ class Skills extends Component {
     return (
       <Fade>
         <div className="skills">
-          <Domain name="Languages" items={languages} />
-          <Domain name="Frameworks" items={frameworks} />
-          <Domain name="Tools" items={tools} />
-          <Domain name="Hobbies" items={hobbies} />
+          <h1>Skills</h1>
+
+          <div className="domains">
+            <Domain name="Languages" items={languages} />
+            <Domain name="Frameworks" items={frameworks} />
+            <Domain name="Tools" items={tools} />
+            <Domain name="Hobbies" items={hobbies} />
+          </div>
         </div>
       </Fade>
     );

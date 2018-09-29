@@ -51,8 +51,8 @@ class Home extends Component {
 }
 
 Home.propTypes = {
-  handleToggle: PropTypes.func.isRequired,
   darkTheme: PropTypes.bool.isRequired,
+  handleToggle: PropTypes.func.isRequired,
 };
 
 export default Home;

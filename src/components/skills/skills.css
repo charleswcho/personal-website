@@ -1,21 +1,24 @@
 .skills {
   padding: 50px 35px;
+}
+
+.skills .domains {
   display: flex;
   justify-content: center;
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  .skills {
+  .skills .domains {
     flex-wrap: wrap;
   }
 
-  .skills .domain {
+  .skills .domains .domain {
     width: 40%;
     margin: 10px;
   }
 
-  .skills .domain .domain-item {
+  .skills .domains .domain .domain-item {
     font-size: 14px;
   }
 }

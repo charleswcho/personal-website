@@ -43,7 +43,7 @@ class App extends Component {
 
     return (
       <div className={className}>
-        <Home handleToggle={this.handleToggle} darkTheme={darkTheme} />
+        <Home darkTheme={darkTheme} handleToggle={this.handleToggle} />
         <About />
         <Skills />
         <Projects />

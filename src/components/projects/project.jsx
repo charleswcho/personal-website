@@ -3,19 +3,25 @@ import PropTypes from 'prop-types';
 
 import './project.css';
 
-const Project = ({ name, techs }) => (
+const Project = ({ name, summary, techs }) => (
   <div className="project">
-    <h1>{name}</h1>
-    {techs.map(tech => (
-      <span className="tech" key={tech}>
-        {tech}
-      </span>
-    ))}
+    <h2>{name}</h2>
+
+    <p>{summary}</p>
+
+    <div className="techs">
+      {techs.map(tech => (
+        <span className="tech" key={tech}>
+          {tech}
+        </span>
+      ))}
+    </div>
   </div>
 );
 
 Project.propTypes = {
   name: PropTypes.string.isRequired,
+  summary: PropTypes.string.isRequired,
   techs: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 

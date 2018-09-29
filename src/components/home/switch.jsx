@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import './switch.css';
 
 const Switch = ({ darkTheme, handleToggle }) => (
-  <div className="switch">
+  <label className="switch">
     <input type="checkbox" checked={darkTheme} onChange={handleToggle} />
     <span className="slider" />
-  </div>
+  </label>
 );
 
 Switch.propTypes = {

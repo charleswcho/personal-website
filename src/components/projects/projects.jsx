@@ -8,12 +8,24 @@ import Project from './project';
 class Projects extends Component {
   state = {
     projects: [
-      { name: 'Readit', techs: ['React', 'Redux', 'ES6', 'Jest', 'SASS'] },
+      {
+        name: 'Readit',
+        summary: 'Simple Reddit clone with tag filtering.',
+        techs: ['React', 'Redux', 'ES6', 'Jest', 'SASS'],
+      },
       {
         name: 'Realloc',
+        summary: `Finacial tool helping to modify your portfolio base on risk
+          profile.  Responsive design, and also a React Native iOS version`,
         techs: ['React', 'Flux', 'React Native', 'ES6', 'SASS'],
       },
-      { name: 'Google-Yelp', techs: ['React', 'Flux', 'ES6'] },
+      {
+        name: 'Google-Yelp',
+        summary: `Inpiration from Yelp but powered by Google Map's API
+          specifically its Geocoder, PlacesService, and Autocomplete
+          functionality.`,
+        techs: ['React', 'Flux', 'ES6'],
+      },
     ],
   };
 
@@ -23,10 +35,13 @@ class Projects extends Component {
     return (
       <Fade>
         <div className="projects">
+          <h1>Projects</h1>
+
           {projects.map(project => (
             <Project
               key={project.name}
               name={project.name}
+              summary={project.summary}
               techs={project.techs}
             />
           ))}

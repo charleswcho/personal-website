@@ -1,10 +1,33 @@
-/* .project {
-} */
+.project {
+  margin-bottom: 40px;
+  max-width: 600px;
+}
 
-.project .tech {
+.project .techs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project .techs .tech {
   color: #0080ff;
-  padding: 3px 5px;
+  padding: 2px 7px;
   margin-right: 10px;
-  border: 2px solid #0080ff;
-  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #0080ff;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 600px) and (max-width: 992px) {
+  .project .techs .tech {
+    font-size: 14px;
+  }
+}
+
+/* Large devices (laptops/desktops, 993px and up) */
+@media (min-width: 993px) {
+  .project .techs .tech {
+    font-size: 16px;
+  }
 }

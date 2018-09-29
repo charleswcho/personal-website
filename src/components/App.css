@@ -8,10 +8,14 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.App.dark h1 {
+/* .App.dark h1 {
   color: white;
-}
+} */
 
 .App.dark .domain-item {
-  color: #e0e0e0;
+  color: #bdbdbd;
+}
+
+.App.dark p {
+  color: #bdbdbd;
 }
