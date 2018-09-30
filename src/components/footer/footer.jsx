@@ -9,7 +9,10 @@ const Footer = () => (
     <div className="footer">
       <div className="credits">
         <span className="top">Designed and Developed by</span>
-        <span className="bottom">Charles Cho in SF 2018</span>
+        <span className="bottom">
+          <strong>Charles Cho </strong>
+          in SF 2018
+        </span>
       </div>
 
       <div className="links">

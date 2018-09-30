@@ -6,8 +6,22 @@ import Domain from './domain';
 
 class Skills extends Component {
   state = {
-    languages: ['Javascript', 'TypeScript', 'HTML', 'CSS', 'SASS', 'Bash'],
-    frameworks: ['React', 'Redux', 'Angular 5', 'Bootstrap'],
+    languages: [
+      'Javascript (ES6+)',
+      'TypeScript',
+      'HTML',
+      'CSS',
+      'SASS',
+      'Bash',
+    ],
+    frameworks: [
+      'React',
+      'React Native',
+      'Redux',
+      'Angular 2+',
+      'jQuery',
+      'Jest',
+    ],
     tools: ['Git', 'Bitbucket', 'Chrome DevTools', 'Postman', 'Atom'],
     hobbies: ['Snowboarding', 'Bouldering'],
   };

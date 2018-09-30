@@ -3,6 +3,21 @@
   max-width: 600px;
 }
 
+.project .header a {
+  color: inherit;
+}
+
+.project .header h2 {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.project .header img {
+  height: 25px;
+  width: 25px;
+  vertical-align: text-bottom;
+}
+
 .project .techs {
   display: flex;
   flex-wrap: wrap;
