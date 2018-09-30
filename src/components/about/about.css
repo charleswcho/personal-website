@@ -1,8 +1,55 @@
 .about {
-  /* height: calc(100vh - 120px); */
-  padding: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+.about .resume {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.about .resume img {
+  height: 25px;
+  width: 25px;
+  margin-left: 5px;
+  transition: 100ms ease-in-out;
+}
+
+.about .resume:hover img {
+  transform: translateX(10px);
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 600px) and (max-width: 992px) {
+  .about {
+    height: calc(50vh);
+  }
+
+  .about .resume {
+    font-size: 16px;
+  }
+
+  .about .resume img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+/* Large devices (laptops/desktops, 993px and up) */
+@media (min-width: 993px) {
+  .about {
+    height: calc(75vh);
+  }
+
+  .about .resume {
+    font-size: 18px;
+  }
+
+  .about .resume img {
+    height: 35px;
+    width: 35px;
+  }
 }

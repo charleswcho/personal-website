@@ -44,10 +44,21 @@ class App extends Component {
     return (
       <div className={className}>
         <Home darkTheme={darkTheme} handleToggle={this.handleToggle} />
-        <About />
-        <Skills />
-        <Projects />
-        <Footer />
+        <div className="section">
+          <About />
+        </div>
+
+        <div className="section">
+          <Skills />
+        </div>
+
+        <div className="section">
+          <Projects />
+        </div>
+
+        <div className="section">
+          <Footer />
+        </div>
       </div>
     );
   }

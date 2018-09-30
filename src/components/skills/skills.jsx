@@ -11,8 +11,8 @@ class Skills extends Component {
       'TypeScript',
       'HTML',
       'CSS',
-      'SASS',
-      'Bash',
+      'Sass',
+      'SQL',
     ],
     frameworks: [
       'React',
@@ -22,12 +22,12 @@ class Skills extends Component {
       'jQuery',
       'Jest',
     ],
-    tools: ['Git', 'Bitbucket', 'Chrome DevTools', 'Postman', 'Atom'],
-    hobbies: ['Snowboarding', 'Bouldering'],
+    tools: ['Atom', 'iTerm2', 'Git', 'Bitbucket', 'Chrome DevTools', 'Postman'],
+    design: ['Sketch', 'Invision', 'Pen & Paper'],
   };
 
   render() {
-    const { languages, frameworks, tools, hobbies } = this.state;
+    const { languages, frameworks, tools, design } = this.state;
 
     return (
       <Fade>
@@ -38,7 +38,7 @@ class Skills extends Component {
             <Domain name="Languages" items={languages} />
             <Domain name="Frameworks" items={frameworks} />
             <Domain name="Tools" items={tools} />
-            <Domain name="Hobbies" items={hobbies} />
+            <Domain name="Design" items={design} />
           </div>
         </div>
       </Fade>

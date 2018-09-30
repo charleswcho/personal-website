@@ -33,6 +33,7 @@ h1 {
   font-size: 26px;
   font-weight: lighter;
   letter-spacing: 3px;
+  text-align: center;
 }
 
 h2 {
@@ -45,6 +46,7 @@ h3 {
 
 p {
   font-size: 14px;
+  max-width: 600px;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

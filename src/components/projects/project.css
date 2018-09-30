@@ -35,6 +35,11 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 600px) and (max-width: 992px) {
+  .project .header img {
+    height: 30px;
+    width: 30px;
+  }
+
   .project .techs .tech {
     font-size: 14px;
   }
@@ -42,6 +47,11 @@
 
 /* Large devices (laptops/desktops, 993px and up) */
 @media (min-width: 993px) {
+  .project .header img {
+    height: 35px;
+    width: 35px;
+  }
+
   .project .techs .tech {
     font-size: 16px;
   }

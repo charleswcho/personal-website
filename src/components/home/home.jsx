@@ -59,7 +59,7 @@ class Home extends Component {
             />
           </div>
 
-          <h1>{currGreeting}</h1>
+          <h1 className="intro">{currGreeting}</h1>
         </div>
       </Fade>
     );

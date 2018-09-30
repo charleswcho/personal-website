@@ -2,15 +2,19 @@
   color: #424242;
 }
 
+.App .section {
+  padding: 50px 35px;
+}
+
 .App.dark {
   color: white;
   background-color: #1d2731;
   -webkit-font-smoothing: antialiased;
 }
 
-/* .App.dark h1 {
+.App.dark .intro {
   color: white;
-} */
+}
 
 .App.dark .domain-item {
   color: #bdbdbd;
@@ -18,4 +22,8 @@
 
 .App.dark p {
   color: #bdbdbd;
+}
+
+.App.dark strong {
+  color: white;
 }
