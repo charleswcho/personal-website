@@ -2,18 +2,42 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import './footer.css';
 
+import resume from '../../assets/resume.pdf';
+
 const Footer = () => (
   <Fade>
     <div className="footer">
-      <div>Made with love in SF</div>
-
-      <div>
-        <span>Github</span>
-        <span>Linkedin</span>
-        <span>Resume</span>
+      <div className="credits">
+        <span className="top">Designed and Developed by</span>
+        <span className="bottom">Charles Cho in SF 2018</span>
       </div>
 
-      <div>Copyright Charles W. Cho 2018</div>
+      <div className="links">
+        <a
+          className="link"
+          href="https://www.linkedin.com/in/charles-cho"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Linkedin
+        </a>
+        <a
+          className="link"
+          href="https://github.com/charleswcho"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Github
+        </a>
+        <a
+          className="link"
+          href={resume}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+        </a>
+      </div>
     </div>
   </Fade>
 );

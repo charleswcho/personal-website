@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal/Fade';
+
 import './home.css';
+
+import darkSun from '../../assets/dark-sun.png';
+import darkMoon from '../../assets/dark-moon.png';
+import sun from '../../assets/sun.png';
+import moon from '../../assets/moon.png';
 
 import Switch from './switch';
 
@@ -38,11 +44,21 @@ class Home extends Component {
 
   render() {
     const { currGreeting } = this.state;
+    const { darkTheme } = this.props;
 
     return (
       <Fade>
         <div className="home">
-          <Switch {...this.props} />
+          <div className="switch-container">
+            <img className="icon" src={darkTheme ? sun : darkSun} alt="sun" />
+            <Switch {...this.props} />
+            <img
+              className="icon"
+              src={darkTheme ? moon : darkMoon}
+              alt="moon"
+            />
+          </div>
+
           <h1>{currGreeting}</h1>
         </div>
       </Fade>

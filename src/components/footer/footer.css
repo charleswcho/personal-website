@@ -1,4 +1,23 @@
 .footer {
   padding: 50px;
-  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .credits {
+  text-align: center;
+}
+
+.footer .credits .top {
+  display: block;
+}
+
+.footer .credits .bottom {
+  display: block;
+}
+
+.footer .links .link {
+  margin: 0 5px;
 }
