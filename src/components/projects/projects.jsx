@@ -13,21 +13,21 @@ class Projects extends Component {
         live: 'https://charleswcho.github.io/readit/',
         github: 'https://github.com/charleswcho/readit',
         summary: 'Simple Reddit clone with tag filtering.',
-        techs: ['React', 'Redux', 'ES6', 'Jest', 'SASS'],
+        techs: ['React', 'Redux', 'ES6', 'Jest', 'Sass'],
       },
       {
         name: 'Realloc',
         live: 'https://realloc.herokuapp.com',
         github: 'https://github.com/charleswcho/realloc',
-        summary: `Finacial tool helping to modify your portfolio base on risk
-          profile.  Responsive design, and also a React Native iOS version`,
+        summary: `Finacial tool that helps you modify your portfolio based on your risk
+          profile. iOS version created using React Native.`,
         techs: [
           'React',
           'React Native',
           'React router',
           'Flux',
           'ES6',
-          'SASS',
+          'Sass',
           'Jest',
           'Enzyme',
           'Heroku',
