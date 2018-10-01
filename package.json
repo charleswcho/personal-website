@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "http://charleswcho.github.io/personal-website",
+  "homepage": "http://charleswesleycho.com",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.0",
