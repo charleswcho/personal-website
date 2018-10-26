@@ -17,7 +17,7 @@
     "lint:css": "stylelint --config=.stylelintrc '**/*.css'",
     "test": "react-scripts test --env=jsdom",
     "build": "react-scripts build",
-    "predeploy": "yarn build",
+    "predeploy": "npm run-script build",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
