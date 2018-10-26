@@ -13,7 +13,7 @@ class Projects extends Component {
         live: 'https://charleswcho.github.io/readit/',
         github: 'https://github.com/charleswcho/readit',
         summary: 'Simple Reddit clone with tag filtering.',
-        techs: ['React', 'Redux', 'ES6', 'Jest', 'Sass'],
+        techs: ['React', 'Redux', 'ES6', 'Sass', 'Jest'],
       },
       {
         name: 'Realloc',
