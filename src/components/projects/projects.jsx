@@ -17,7 +17,7 @@ class Projects extends Component {
       },
       {
         name: 'Realloc',
-        live: 'https://realloc.herokuapp.com',
+        live: 'https://charleswcho.github.io/Realloc/',
         github: 'https://github.com/charleswcho/realloc',
         summary: `Finacial tool that helps you modify your portfolio based on your risk
           profile. iOS version created using React Native.`,
