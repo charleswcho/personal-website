@@ -30,7 +30,6 @@ class Projects extends Component {
           'Sass',
           'Jest',
           'Enzyme',
-          'Heroku',
         ],
       },
       {
