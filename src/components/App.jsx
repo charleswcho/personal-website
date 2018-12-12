@@ -21,8 +21,8 @@ class App extends Component {
   defaultDark = () => {
     const date = new Date();
     const hours = date.getHours();
-    // Darkmode default from 6pm to 6am
-    return hours >= 18 || hours <= 6;
+    // Darkmode default from 5pm to 6am
+    return hours >= 17 || hours <= 6;
   };
 
   /**
