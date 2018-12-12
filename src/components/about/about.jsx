@@ -2,6 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 
 import './about.css';
+import resume from '../../assets/resume.pdf';
 import arrow from '../../assets/right-arrow.png';
 
 const About = () => (
@@ -29,7 +30,7 @@ const About = () => (
 
       <a
         className="resume"
-        href={`${process.env.PUBLIC_URL}/resume.pdf`}
+        href={resume}
         target="_blank"
         rel="noopener noreferrer"
       >
