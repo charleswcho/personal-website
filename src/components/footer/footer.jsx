@@ -37,6 +37,7 @@ const Footer = () => (
           href={resume}
           target="_blank"
           rel="noopener noreferrer"
+          download
         >
           Resume
         </a>

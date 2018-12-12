@@ -33,6 +33,7 @@ const About = () => (
         href={resume}
         target="_blank"
         rel="noopener noreferrer"
+        download
       >
         Resume
         <img src={arrow} alt="right arrow" />
