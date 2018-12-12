@@ -2,8 +2,6 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import './footer.css';
 
-import resume from '../../assets/resume.pdf';
-
 const Footer = () => (
   <Fade>
     <div className="footer">
@@ -34,7 +32,7 @@ const Footer = () => (
         </a>
         <a
           className="link"
-          href={resume}
+          href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
