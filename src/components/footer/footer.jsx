@@ -32,13 +32,7 @@ const Footer = () => (
         >
           Github
         </a>
-        <a
-          className="link"
-          href={resume}
-          target="_blank"
-          rel="noopener noreferrer"
-          download
-        >
+        <a className="link" href={resume}>
           Resume
         </a>
       </div>
