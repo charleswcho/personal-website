@@ -28,7 +28,12 @@ const About = () => (
         building tools to help cancer patients get the care they need.
       </p>
 
-      <a className="resume" href={resume}>
+      <a
+        className="resume"
+        href={resume}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Resume
         <img src={arrow} alt="right arrow" />
       </a>
