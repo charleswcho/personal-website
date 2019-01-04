@@ -22,7 +22,15 @@ class Skills extends Component {
       'jQuery',
       'Jest',
     ],
-    tools: ['Atom', 'iTerm2', 'Git', 'Bitbucket', 'Chrome DevTools', 'Postman'],
+    tools: [
+      'Atom',
+      'VSCode',
+      'iTerm2',
+      'Git',
+      'Bitbucket',
+      'Chrome DevTools',
+      'Postman',
+    ],
     design: ['Sketch', 'Invision', 'Pen & Paper'],
   };
 

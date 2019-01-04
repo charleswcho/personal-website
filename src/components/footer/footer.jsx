@@ -11,7 +11,7 @@ const Footer = () => (
         <span className="top">Designed and Developed by</span>
         <span className="bottom">
           <strong>Charles Cho </strong>
-          in SF 2018
+          in SF 2019
         </span>
       </div>
 
