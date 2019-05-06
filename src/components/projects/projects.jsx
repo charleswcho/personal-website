@@ -10,8 +10,8 @@ class Projects extends Component {
     projects: [
       {
         name: 'Readit v2',
-        live: 'https://charleswcho.github.io/readitv2/',
-        github: 'https://github.com/charleswcho/readitv2',
+        live: 'https://charleswcho.github.io/readit-v2/',
+        github: 'https://github.com/charleswcho/readit-v2',
         summary: 'Readit built with the new React Hooks API',
         techs: ['React', 'React Hooks', 'Material UI', 'ES6+', 'Sass'],
       },
