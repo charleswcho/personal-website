@@ -12,13 +12,13 @@ const About = () => (
 
       <h3>I like building things</h3>
 
-      <p>Legos &rarr; Construction &rarr; iOS &rarr; Web</p>
+      <p>Legos &rarr; Construction &rarr; iOS &rarr; Web Apps</p>
 
       <p>
         I&#39;ve always enjoyed building things. From playing with legos in my
         childhood, to carpentry &amp; construction in high school, to iOS and
         finally
-        <strong> web development </strong>
+        <strong> web app development </strong>
         now, creating things is my passion.
       </p>
 
