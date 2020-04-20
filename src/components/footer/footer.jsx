@@ -8,11 +8,11 @@ const Footer = () => (
   <Fade>
     <div className="footer">
       <div className="credits">
-        <span className="top">Designed and Developed by</span>
-        <span className="bottom">
-          <strong>Charles Cho </strong>
-          in SF 2019
-        </span>
+        <div className="top">Designed and developed by</div>
+        <div className="bottom">
+          <strong>© 2020 Charles Cho </strong>
+          in SF
+        </div>
       </div>
 
       <div className="links">

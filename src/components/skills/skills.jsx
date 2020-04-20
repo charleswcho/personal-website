@@ -15,15 +15,14 @@ class Skills extends Component {
       'SQL',
     ],
     frameworks: [
+      'Angular 2+',
       'React',
       'React Native',
       'Redux',
-      'Angular 2+',
       'jQuery',
       'Jest',
     ],
     tools: [
-      'Atom',
       'VSCode',
       'iTerm2',
       'Git',

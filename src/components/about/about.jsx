@@ -24,8 +24,14 @@ const About = () => (
 
       <p>
         I&#39;m currently a Software Engineer at
-        <strong> Leantaas </strong>
-        building tools to help cancer patients get the care they need.
+        <a
+          href="https://www.prosper.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong> Prosper </strong>
+        </a>
+        working to help everyone achieve finiancial stability.
       </p>
 
       <a
