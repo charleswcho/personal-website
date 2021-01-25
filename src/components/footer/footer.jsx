@@ -10,8 +10,9 @@ const Footer = () => (
       <div className="credits">
         <div className="top">Designed and developed by</div>
         <div className="bottom">
-          <strong>© 2021 Charles Cho </strong>
+          <strong>Charles Cho </strong>
           in SF
+          <strong> © 2021</strong>
         </div>
       </div>
 

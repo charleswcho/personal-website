@@ -5,33 +5,40 @@ import './skills.css';
 import Domain from './domain';
 
 class Skills extends Component {
-  state = {
-    languages: [
-      'Javascript (ES6+)',
-      'TypeScript',
-      'HTML',
-      'CSS',
-      'Sass',
-      'SQL',
-    ],
-    frameworks: [
-      'Angular 2+',
-      'React',
-      'React Native',
-      'Redux',
-      'jQuery',
-      'Jest',
-    ],
-    tools: [
-      'VSCode',
-      'iTerm2',
-      'Git',
-      'Bitbucket',
-      'Chrome DevTools',
-      'Postman',
-    ],
-    design: ['Sketch', 'Invision', 'Pen & Paper'],
-  };
+  constructor() {
+    super();
+
+    this.state = {
+      languages: [
+        'Javascript (ES6+)',
+        'TypeScript',
+        'HTML',
+        'CSS',
+        'Sass',
+        'Styled',
+      ],
+      frameworks: [
+        'React',
+        'GraphQL',
+        'React Native',
+        'Redux',
+        'Node',
+        'Angular 2+',
+        'Rails',
+        'Jest',
+      ],
+      tools: [
+        'VS Code',
+        'iTerm2',
+        'Bitbucket',
+        'Git',
+        'Jira',
+        'Chrome DevTools',
+        'Postman',
+      ],
+      design: ['Figma', 'Sketch', 'Invision', 'Pen & Paper'],
+    };
+  }
 
   render() {
     const { languages, frameworks, tools, design } = this.state;
